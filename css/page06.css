@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+#wrap {
+	position: relative;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+section#poster_slide {
+	position: relative;
+}
+
+#poster_slide {
+	position: relative;
+	width: 1280px;
+	height: 503px;
+	margin: 0 auto;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#poster_slide #poster_frame {
+	position: absolute;
+	height: 503px;
+	width: 6400px;
+}
+
+#poster_slide #poster_frame:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#poster_slide #poster_frame .poster_sl {
+	float: left;
+	height: 503px;
+}
+
+#arrow a {
+	position: absolute;
+	top: 200px;
+}
+
+#arrow a.prev {
+	left: 10px;
+}
+
+#arrow a.next {
+	right: 10px;
+}
+
+
+
+#class_info #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 110px;
+}
+
+#class_info h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "";
+	color: #59150A;
+	margin: 100px 0 20px;
+}
+
+#class_info #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 110px;
+}
+
+#class_info content {
+	position: relative;
+	width: 1060px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-bottom: 1px solid #220702;
+}
+
+#class_info content:last-child {
+	border-bottom: none;
+}
+
+#class_info content h3 {
+	margin: 50px 0 30px 0;
+	font: bold 25px "NGothic";
+	color: #59150a;
+}
+
+#sub_internet>div>img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+		
+}
+
+#class_info content .icon {
+	position: relative;
+	width: auto;
+	left: 30px;
+}
+
+#class_info content p {
+	position: relative;
+	top: -150px;
+	left: 250px;
+	display: block;
+	width: 800px;
+	font: normal 14px "NGothic";
+	line-height: 25px;
+	color: #2E2E2E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

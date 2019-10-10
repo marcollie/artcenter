@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page12.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+			});
+			$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+		});
+	</script>
+	
+<title>극장견학</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="head">
+			<h2><div id="bar1"></div>극장 견학<div id="bar2"></div></h2>
+			<img src="images/12/top.jpg" alt="극장 견학" />
+		</div>
+		<section>
+			<div id="info">
+				<h3>▩ 극장 견학 프로그램 안내</h3>
+				<img src="images/12/chart1.jpg" alt="극장견학프로그램안내" />
+			</div>
+		</section>
+		
+		<section>
+			<div id="ask">
+				<h3>▩ 신청 및 문의</h3>
+				<img src="images/12/chart2.jpg" alt="신청및문의" />
+				<ul>
+					<li id="downbutton1"><a href="#">(워드)다운로드</a></li>
+					<li id="downbutton2"><a href="#">(한글)다운로드</a></li>
+				</ul>
+			</div>
+		</section>
+		
+		<section>
+			<div id="facil">
+			<h3>▩ 극장 안내</h3>
+				<ul>
+					<li>
+						<img src="images/12/operahouse_roby.jpg" alt="오페라하우스로비" />
+						<p>▶ 오페라하우스 로비</p>
+					</li>
+					<li>
+						<img src="images/12/operahouse_stage.jpg" alt="오페라하우스무대" />
+						<p>▶ 오페라하우스 무대</p>
+					</li>
+					<li>
+						<img src="images/12/operahouse_seat.jpg" alt="오페라하우스객석" />
+						<p>▶ 오페라하우스 객석</p>
+					</li>
+					<li>
+						<img src="images/12/step.jpg" alt="무대스텝" />
+						<p>▶ 무대스텝</p>
+					</li>
+					<li>
+						<img src="images/12/concerthall_roby.jpg" alt="콘서트홀로비" />
+						<p>▶ 콘서트홀 로비</p>
+					</li>
+					<li>
+						<img src="images/12/concerthall_stage.jpg" alt="콘서트홀객석및무대" />
+						<p>▶ 콘서트홀 객석 및 무대</p>
+					</li>
+					<li>
+						<img src="images/12/Atheater.jpg" alt="앙상블시어터" />
+						<p>▶ 앙상블시어터</p>
+					</li>
+					<li>
+						<img src="images/12/makeup.jpg" alt="분장실및연습실" />
+						<p>▶ 분장실 및 연습실</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page06.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slidebar.js"></script>	
+	
+<title>수강신청안내</title>
+	
+	<style>
+		.control_pannel {
+			position: absolute;
+			bottom: 10px; 
+			left: 47.5%;
+			height: 10px;
+			overflow:hidden;
+			
+		}
+		.control_button {
+			width:10px; height:20px;
+			float:left;
+			position: relative;
+			background:url(images/roll_icon.png);
+			margin-right: 4px;
+		}
+		.control_button:hover {
+				top:-10px;
+		}
+		.control_button.active {
+				top:-10px;
+		}
+	</style>
+	
+	<script>
+
+			$(document).ready(function(){
+				$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+			});
+				$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+		});
+
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		
+		
+
+			<section id="poster_slide">
+			  <h1 class="skip">슬라이드</h1>
+				<ul id="poster_frame">
+					<li id="bigposter1" class="poster_sl">
+						<img src="images/bigposter1.jpg" alt="메인포스터1" />
+					</li>
+					<li id="bigposter2" class="poster_sl">
+						<img src="images/bigposter2.jpg" alt="메인포스터2" />
+					</li>
+					<li id="bigposter3" class="poster_sl">
+						<img src="images/bigposter3.jpg" alt="메인포스터3" />
+					</li>
+					<li id="bigposter4" class="poster_sl">
+						<img src="images/bigposter4.jpg" alt="메인포스터4" />
+					</li>
+					<li id="bigposter5" class="poster_sl">
+						<img src="images/bigposter5.jpg" alt="메인포스터5" />
+					</li>
+				</ul>
+				<div id="arrow">
+					<a class="prev" href="#" onClick="return false">
+					<img src="images/arrow_left.gif" alt="이전" /></a>
+					<a class="next" href="#" onClick="return false">
+					<img src="images/arrow_right.gif" alt="다음" /></a>
+				</div>
+				<div class="control_pannel">
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+        		</div>
+			</section>
+		
+		
+		
+		<section id="class_info">
+			<h2><div id="bar1"></div>수강신청안내<div id="bar2"></div></h2>
+			<content id="sub_internet">
+				<div>
+					<h3>■ 인터넷 수강신청 절차</h3>
+					<img class="icon" src="images/06/img_ C020100_01.jpg" alt="인터넷 수강신청 절차" />	
+				</div>
+			</content>
+			<content id="sub_cancel">
+				<div>
+					<h3>■ 취소 및 환불안내</h3>
+					<img class="icon" src="images/06/icon_rec.png" alt="취소환불 아이콘" />
+					<p>▶ 환불신청은 방문 및 전화신청 가능<br />
+▶ 환불은 카드결재시 카드부분 취소, 무통장 입금시 계좌환불로 진행되며 최소 7일에서 최대 15일 소요<br />
+&ensp;&ensp; (주말 및 공휴일 제외)<br />
+▶ 강좌시작 전까지 환불 신청 시 전액 환불 (폐강 포함)<br />
+▶ 강좌시작 이후 본인의 사유에 의한 취소 시에는 해당 강좌 당일에 취소가 불가하며, 당일 취소하시는 경우에는 <br />
+&ensp;&ensp; 해당일을 제외하고 환불됨<br /><br />
+					<img src="images/06/rec.png" alt="환불요건" /></p>
+				</div>
+			</content>
+			<content id="sub_benefit">
+				<div>
+					<h3>■ 수강혜택</h3>
+					<img class="icon" src="images/06/icon_ben.png" alt="수강혜택 아이콘" />
+					<p>
+						▶ 동일강좌 3학기 연속 수료 수강생의 경우 4학기 등록 시 수강료 10% 할인 (동일 이름으로 전 회차 수료 시에만 가능,<br /> 
+&ensp;&ensp; 이전 학기 중도수강, 중도환불 시 불가)<br />
+▶ 현 아트센터 VIP회원 10% 할인, 장애인 및 국가유공자 10% 할인<br />
+&ensp;&ensp; ※중복할인 대상 : 1+2 = 20% 할인<br />
+▶ 현 아트센터 GOLD회원 5% 할인<br />
+▶ 현 아트센터후원회원 20% 할인<br />
+▶ 한 가족 3명 이상 수강신청 시 강좌별 5% 할인(4인 이내)<br />
+▶ 성남아트센터 내 카페, 레스토랑 10% 할인<br />
+					</p>
+				</div>
+			</content>
+			<content id="sub_question">
+				<div>
+					<h3>■ 수강시 유의사항 및 문의</h3>
+					<img class="icon" src="images/06/icon_que.png" alt="유의문의 아이콘" />
+					<p>
+						▶ 기존 수강생 신청 기간에 수강 신청할 경우 기존 수강했던 강좌만 신청 가능<br />
+▶ 강좌 개강 시 수강신청인원이 정원의 50% 미만일 경우 폐강되며, 강좌진행 중 50%의 정원이 미달될 경우에도 폐강 될<br />
+&ensp;&ensp; 수 있음<br />
+▶ 강의 일정 및 강사는 경우에 따라 변동될 수 있으며 강사의 사정에 의하여 대강 또는 불가피하게 강사가 변경될 수 있음<br />
+▶ 명시되어 있지 않아도 강좌에 따라 진행에 필요한 재료비, 교재비가 있을 수 있음<br />
+▶ 중도 환불 시 해당 학기 동안 환불 강좌에 한하여 재수강 불가<br /><br />
+
+▶ 문의) 문화사업부 아카데미(031-783-8156)
+					</p>
+				</div>
+			</content>
+			<content id="sub_park">
+				<div>
+					<h3>■ 주차 안내</h3>
+					<img class="icon" src="images/06/icon_park.png" alt="주차 아이콘" />
+					<p>
+						▶ 음악실 강좌 수강 시 콘서트홀 B1 주차장<br />
+▶ 미술실, 무용실, 피아노실, 뮤직홀, 세미나실 강좌 수강 시 오페라하우스 B1, B2 주차장<br />
+▶ 미디어홀 강좌 수강 시 야외주차장<br />
+※ 아카데미 접수처 및 사무실(앙상블시어터)에서 아카데미 회원용 할인권을 받으셔야만 주차요금이 1일 천원입니다. <br />
+&ensp;&ensp; (이용시간 : 오전 10 ~ 오후 9시 / 점심시간 제외)
+					</p>
+				</div>
+			</content>
+		</section>
+
+	</div>
+</body>
+</html>

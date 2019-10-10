@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+section#poster_slide {
+	position: relative;
+}
+
+#poster_slide {
+	position: relative;
+	width: 1280px;
+	height: 503px;
+	margin: 0 auto;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#poster_slide #poster_frame {
+	position: absolute;
+	height: 503px;
+	width: 6400px;
+}
+
+#poster_slide #poster_frame:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#poster_slide #poster_frame .poster_sl {
+	float: left;
+	height: 503px;
+}
+
+#arrow a {
+	position: absolute;
+	top: 200px;
+}
+
+#arrow a.prev {
+	left: 10px;
+}
+
+#arrow a.next {
+	right: 10px;
+}
+
+
+
+
+
+
+#schedule {
+	position: relative;
+	width: 1060px;
+	margin: 0 auto;
+	
+}
+
+#schedule #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 0;
+}
+
+#schedule h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "khmer";
+	color: #59150A;
+	margin: 60px 0 20px;
+}
+
+#schedule #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 0;
+}
+
+#schedule>#menu:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#schedule #menu {
+	width: 424px;
+	position: relative;
+	left: 30%;
+	margin: 50px 0;
+}
+
+#schedule #menu li {
+	float: left;
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 200px;
+	height: 60px;
+	background: #fff;
+}
+
+#schedule #menu li:hover {
+	background: #bb966b;
+}
+
+#schedule #menu li:first-child {
+	margin-right: 20px;
+}
+
+#schedule #menu a {
+	width: 200px;
+	height: 60px;
+}
+
+#schedule #menu h3 {
+	font: bold 30px/60px "NGothic";
+	color: #000;
+	padding-left: 70px
+}
+
+
+#cal_loc {
+	position: relative;
+	width: 252px;
+	height: 564px;
+}
+
+#calendar {
+	position: relative;
+
+	width: 250px;
+	height: 270px;
+}
+
+#location {
+	position: relative;
+	border: 1px solid #000;
+	width: 250px;
+	height: 200px;
+	margin-top: 10px;
+	background: #faf9d9;
+}
+
+#schedule_content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#schedule_content {
+	position: relative;
+	top: 50px;
+}
+
+#location h3 {
+	font: bolder 25px "Helvetica";
+	color: #555;
+	margin: 10px;
+}
+
+#location input.aaa {
+	margin: 10px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+
+
+
+
+#schedule_content ul {
+	float: left;
+}
+
+#poster {
+	position: relative;
+	width: 802px;
+	left: 8px;
+}
+
+
+
+#poster li {
+	position: relative;
+	float: left;
+	margin: 0 0 10px 10px;
+
+
+}
+
+.txt_desc {
+	font: normal 15px "Helvetica";
+	
+}
+
+#poster a {
+	position: relative;
+	display: block;
+	width: 257px;
+	height: 410px;
+	overflow: hidden;
+}
+
+#poster div  {
+	position: absolute;
+	width: 257px;
+	height: 410px;
+	background: #000;
+	opacity: 0.7;
+	top: 350px;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+#poster p {
+	position: absolute;
+	font: normal 18px "Helvetica";
+	color: #fff;
+	top: 365px;
+	left: 10px;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+#poster2 p {
+	position: absolute;
+	font: normal 18px "Helvetica";
+	color: #fff;
+	top: 356px;
+	left: 10px;
+}
+
+#poster2>a>p>span {
+	position: relative;
+	top: 10px;
+}
+
+#poster a:hover>div {
+	top: 270px;
+	opacity: 0.9;
+}
+
+#poster a:hover>p {
+	top: 280px;
+}
+
+
+footer {
+	margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

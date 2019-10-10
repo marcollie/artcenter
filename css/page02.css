@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+section#poster_slide {
+	position: relative;
+}
+
+#poster_slide {
+	position: relative;
+	width: 1280px;
+	height: 503px;
+	margin: 0 auto;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#poster_slide #poster_frame {
+	position: absolute;
+	height: 503px;
+	width: 6400px;
+}
+
+#poster_slide #poster_frame:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#poster_slide #poster_frame .poster_sl {
+	float: left;
+	height: 503px;
+}
+
+#arrow a {
+	position: absolute;
+	top: 200px;
+}
+
+#arrow a.prev {
+	left: 10px;
+}
+
+#arrow a.next {
+	right: 10px;
+}
+
+
+
+#ticket_desc {
+	position: relative;
+	width: 1060px;
+	margin: 0 auto;
+	
+}
+
+#ticket_desc #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 0;
+}
+
+#ticket_desc h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "NGothic";
+	color: #59150A;
+	margin: 60px 0 20px;
+}
+
+#ticket_desc #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 0;
+}
+
+#ticket_desc>.menu:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#ticket_desc .menu {
+	width: 700px;
+	position: relative;
+	left: 20%;
+	margin: 50px 0;
+}
+
+#ticket_desc .menu li {
+	float: left;
+	border: 1px solid #000;
+	width: 200px;
+	height: 60px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+#ticket_desc .menu li:hover {
+	background: #bb966b;
+}
+
+#ticket_desc .menu li:nth-child(1),#ticket_desc .menu li:nth-child(2){
+	margin-right: 20px;
+}
+
+#ticket_desc .menu a {
+	width: 200px;
+	height: 60px;
+}
+
+#ticket_desc .menu li:nth-child(1) h3 {
+	font: bold 25px/60px "NGothic";
+	color: #000;
+	padding-left: 80px
+}
+
+
+#ticket_desc .menu h3 {
+	font: bold 25px/60px "NGothic";
+	color: #000;
+	padding-left: 50px
+}
+
+#ticket_desc article{
+	position: relative;
+	width: 1060px;
+	height: auto;
+	border-bottom: 1px solid #000;
+}
+
+#ticket_desc article:last-child {
+	border-bottom: none;
+}
+
+#ticket_desc:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#ticket_desc div.icon {
+	position: relative;
+	width: auto;
+	left: 30px;
+}
+
+
+
+
+#ticket_desc h4 {
+	margin: 50px 0 30px 0;
+	font: bold 25px "NGothic";
+	color: #59150a;
+}
+
+#ticket_desc .desc_head {
+	font: bold 18px "NGothic";
+	color: #000;
+	padding: 5px;
+	background: linear-gradient(to right,#bb966b, #fff);
+	background: -webkit-linear-gradient(to right,#bb966b, #fff);
+	background: -moz-linear-gradient(to right,#bb966b, #fff);
+	background: -o-linear-gradient(to right,#bb966b, #fff);
+		
+}
+
+#ticket_desc .desc_detail {
+	position: relative;
+	left: 10px;
+	font: normal 14px "Dotum";
+	line-height: 25px;
+	color: #2e2e2e;
+	margin-bottom: 40px;
+		
+}
+
+#ticket_desc span {
+	position: relative;
+	top: -220px;
+	left: 250px;
+	display: block;
+	width: 800px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+#wrap {
+	position: relative;
+	width: 1280px;
+	height: auto;
+}
+
+#head {
+	position: relative;
+	width: 1280px;
+}
+
+#head #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 110px;
+}
+
+#head h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "";
+	color: #59150A;
+	margin: 100px 0 20px;
+}
+
+#head #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 110px;
+}
+
+#wrap section {
+	position: relative;
+	width: 1280px;
+	height: auto;
+	border-bottom: 1px solid #000;
+}
+
+section div {
+	position: relative;
+	width: 1020px;
+	margin: 0 auto;
+	margin-bottom: 120px;
+}
+
+section div h3 {
+	margin: 50px 0 30px 0;
+	font: bold 25px "NGothic";
+	color: #5f4123;
+}
+
+#ask ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#ask ul li {
+	float: left;
+	position: absolute;
+	top: 156px;
+	font: normal 17px/40px "NGothic";
+	text-align: center;
+	display: block;
+	border: 1px solid #000;
+	width: 130px;
+	height: 40px;
+	left: 250px;
+	background: #fdf6f0
+}
+
+#ask ul li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	width: 130px;
+	height: 40px;
+}
+
+#ask ul li:last-child {
+	left: 400px;
+}
+
+#ask ul li:hover a{
+	background: #71552e;
+	color: #fff;
+}
+
+#facil:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#facil li {
+	float: left;
+	display: block;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	width: 247px;
+}
+
+#facil li:nth-child(4),#facil li:nth-child(8) {
+	margin-right: 0
+}
+
+#facil li p {
+	font: normal 16px "NGothic";
+	margin-top: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+#wrap {
+	position: relative;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+section#poster_slide {
+	position: relative;
+}
+
+#poster_slide {
+	position: relative;
+	width: 1280px;
+	height: 503px;
+	margin: 0 auto;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#poster_slide #poster_frame {
+	position: absolute;
+	height: 503px;
+	width: 6400px;
+}
+
+#poster_slide #poster_frame:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#poster_slide #poster_frame .poster_sl {
+	float: left;
+	height: 503px;
+}
+
+#arrow a {
+	position: absolute;
+	top: 200px;
+}
+
+#arrow a.prev {
+	left: 10px;
+}
+
+#arrow a.next {
+	right: 10px;
+}
+
+#academy {
+	position: relative;
+	width: 1060px;
+	margin: 0 auto;
+	
+}
+
+#academy #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 0;
+}
+
+#academy h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "NGothic";
+	color: #59150A;
+	margin: 100px 0 20px;
+}
+
+#academy #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 0;
+}
+
+#academy_info h3 {
+	position: relative;
+	text-align: center;
+	font: bold 28px "NGothic";
+	margin: 30px 0;
+	background: linear-gradient(to top, #bb966b, #fff);
+	background: -webkit-linear-gradient(to top, #bb966b, #fff);
+	background: -moz-linear-gradient(to top, #bb966b, #fff);
+	background: -o-linear-gradient(to top, #bb966b, #fff);
+}
+
+#academy_info img {
+	position: relative;
+	width: 360px;
+	height: 500px;
+	left: 10%;
+}
+
+#academy_info span {
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	font: normal 14px/19px "NGothic";
+}
+
+
+
+#academy_info span .info_head {
+	font: bold 18px "NGothic";
+	padding: 5px;
+	background: linear-gradient(to right,#bb966b, #fff);
+	background: -webkit-linear-gradient(to right,#bb966b, #fff);
+	background: -moz-linear-gradient(to right,#bb966b, #fff);
+	background: -o-linear-gradient(to right,#bb966b, #fff);
+}
+
+
+#academy #bar3 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 0;
+}
+#academy h2:nth-child(3) {
+	margin-top: 200px;
+}
+
+#academy #bar4 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 0;
+}
+
+#academy_fac:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#academy_fac {
+	position: relative;
+	width: 1060px;
+}
+
+#academy_fac li {
+	float: left;
+	margin: 10px;
+	font: normal 17px "NGothic";
+}
+
+#academy_fac li:last-child {
+	margin-right: 0
+}
+#academy_fac ul {
+	position: relative;
+	left: 30px;
+}
+
+footer {
+	margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page13.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+			});
+			$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+		});
+	</script>
+	
+<title>성남아트센터소개</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<img src="images/13/artcenter.jpg" alt="성남아트센터소개" />
+		<section id="artcenter">
+			<h2><div id="bar1"></div>성남아트센터 소개<div id="bar2"></div></h2>
+			<article id="desc_1">
+				<div id="textbox_desc1">
+					<p class="desc_head">세계 최고의 작품들과 함께한<br /> 성남아트센터</p><br /><br />
+					<p>지금까지 길버트 카플란의 첫 내한 무대를 비롯해 이반 피셔와 부다페스트페스티벌 오케스트라, 바리톤 마티아스 괴르네의 첫 리사이틀, 몬테카를로 발레단의 [신데렐라][라 벨르], 크리스티안 틸레만과 뮌헨 필하모닉 오케스트라, 세계 4대 뮤지컬인 미스 사이공의 초연 무대 등 공연 예술계가 놀랄만한 기획 프로그램들을 소개해왔고, 첼리스트 장한나의 지휘자 데뷔 무대로 잘 알려진 청소년 관현악 페스티벌을 비롯해, 자체 제작 오페라인 [파우스트] [낙소스 섬의 아리아드네]는 KBS TV가 2005년, 2007년 그 해 최고의 공연으로 선정하는 등 지금까지 시도하지 않았던 기획 무대와 완성도로 큰 호평을 받았다.
+					여기에 시민들과 함께 하는 문화예술축제 탄천페스티벌과 국제무용축제인 성남국제무용제, 청소년들의 음악 감성교육을 위한 성남국제 청소년관현악페스티벌을 개최하여 지역문화 발전에 크게 기여해 왔다.</p>
+				</div>
+				<ul>
+					<li>
+						<img src="images/13/kaplan.png" alt="말레 스페셜 리스트 길버트 카플란 초연" />
+					</li>
+					<li>
+						<img src="images/13/monte.png" alt="몬테카를로 발레단 신데렐라 초연" />
+					</li>
+					<li>
+						<img src="images/13/guerne.png" alt="바리톤 마티아스 괴르네 초연" />
+					</li>
+					<li>
+						<img src="images/13/tileman.png" alt="크리스티안 틸레만,뮌헨 필 초연" />
+					</li>
+				</ul>
+			</article>
+			
+			<article id="desc_2">
+				<div id="textbox_desc2">
+					<p class="desc_head">공연, 전시, 예술강좌 등 <br />시민과 함께하는 성남아트센터</p><br /><br />
+					<p>공연 외에도 미술작품을 만날 수 있는 성남아트센터에는 미술관본관, 큐브미술관으로 나뉘어있는 전시장과 다양한 문화 강좌를 소개하는 아카데미, 최고의 기술을 갖춘 음악분수와 야외광장, 편의시설 등을 갖추고 있다. 아름다운 자연과 함께 시민들이 찾고 싶은 쉼터, 자기계발의 공간으로 자리하고 있는 성남아트센터는 성남 지역뿐만이 아니라 수도권 지역의 문화 허브로 더욱 박차를 가해나갈 것이다.</p>
+				</div>
+				<ul>
+					<li><img src="images/13/music.png" alt="음악분수" /></li>
+					<li><img src="images/13/cube.png" alt="큐브미술관" /></li>
+				</ul>
+			</article>
+		</section>
+	</div>
+</body>
+</html>

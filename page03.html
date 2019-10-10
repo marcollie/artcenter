@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page03.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slidebar.js"></script>	
+	
+	
+<title>좌석배치도</title>
+	<style>
+		.control_pannel {
+			position: absolute;
+			bottom: 10px; 
+			left: 47.5%;
+			height: 10px;
+			overflow:hidden;
+			
+		}
+		.control_button {
+			width:10px; height:20px;
+			float:left;
+			position: relative;
+			background:url(images/roll_icon.png);
+			margin-right: 4px;
+		}
+		.control_button:hover {
+				top:-10px;
+		}
+		.control_button.active {
+				top:-10px;
+		}
+	</style>
+	
+	<script>
+
+			$(document).ready(function(){
+				$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+				});
+				$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+			});
+		
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		
+		
+
+			<section id="poster_slide">
+			  <h1 class="skip">슬라이드</h1>
+				<ul id="poster_frame">
+					<li id="bigposter1" class="poster_sl">
+						<img src="images/bigposter1.jpg" alt="메인포스터1" />
+					</li>
+					<li id="bigposter2" class="poster_sl">
+						<img src="images/bigposter2.jpg" alt="메인포스터2" />
+					</li>
+					<li id="bigposter3" class="poster_sl">
+						<img src="images/bigposter3.jpg" alt="메인포스터3" />
+					</li>
+					<li id="bigposter4" class="poster_sl">
+						<img src="images/bigposter4.jpg" alt="메인포스터4" />
+					</li>
+					<li id="bigposter5" class="poster_sl">
+						<img src="images/bigposter5.jpg" alt="메인포스터5" />
+					</li>
+				</ul>
+				<div id="arrow">
+					<a class="prev" href="#" onClick="return false">
+					<img src="images/arrow_left.gif" alt="이전" /></a>
+					<a class="next" href="#" onClick="return false">
+					<img src="images/arrow_right.gif" alt="다음" /></a>
+				</div>
+				<div class="control_pannel">
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+        		</div>
+			</section>
+		
+		
+		<section id="seat_map">
+			<h2><div id="bar1"></div>좌석 배치도<div id="bar2"></div></h2>
+			<ul class="menu">
+				<li><a href="#"><h3>오페라 하우스</h3></a></li>
+				<li><a href="#"><h3>콘서트 홀</h3></a></li>
+				<li><a href="#"><h3>앙상블 시어터</h3></a></li>
+			</ul>
+			
+			<article id="floor1">
+				<h3>■ 오페라 하우스 1층</h3>
+				<img src="images/03/floor1.jpg" alt="오페라하우스1층" />
+				<div class="seat_detail"><a href="#fl01">확대보기</a></div>
+				<div class="bigseat_map" id="fl01">
+					<div>
+						<a href="#close"> <img src="images/03/seat_01_1.jpg" alt="1층" /></a>
+					</div>
+				</div>
+			</article>
+			
+			<article id="floor2">
+				<h3>■ 오페라 하우스 2층</h3>
+				<img src="images/03/floor2.jpg" alt="오페라하우스2층" />
+				<div class="seat_detail"><a href="#fl02">확대보기</a></div>
+				<div class="bigseat_map" id="fl02">
+					<div>
+						<a href="#close"> <img src="images/03/seat_01_2.jpg" alt="2층" /></a>
+					</div>
+				</div>
+			</article>
+			
+			<article id="floor3">
+				<h3>■ 오페라 하우스 3층</h3>
+				<img src="images/03/floor3.jpg" alt="오페라하우스3층" />
+				<div class="seat_detail"><a href="#fl03">확대보기</a></div>
+				<div class="bigseat_map" id="fl03">
+					<div>
+						<a href="#close"> <img src="images/03/seat_01_3.jpg" alt="3층" /></a>
+					</div>
+				</div>
+			</article>
+			
+			
+			
+		</section>
+		
+		
+	</div>
+	
+</body>
+</html>

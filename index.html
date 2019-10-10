@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/index.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slidebar.js"></script>	
+<script src="js/mobileslide.js"></script>	
+<title>성남아트센터 메인</title>
+
+	<style>
+		.control_pannel {
+			position: absolute;
+			bottom: 10px; 
+			left: 47.5%;
+			height: 10px;
+			overflow:hidden;
+			
+		}
+		.control_button {
+			width:10px; height:20px;
+			float:left;
+			position: relative;
+			background:url(images/roll_icon.png);
+			margin-right: 4px;
+		}
+		.control_button:hover {
+				top:-10px;
+		}
+		.control_button.active {
+				top:-10px;
+		}
+	</style>
+	
+	<script>
+			$(document).ready(function() {
+				$.ajax({
+					url:'header.html',
+					success:function(data) {
+						$('body').prepend(data);
+					}
+				});
+				$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+			});
+
+	</script>
+	
+</head>
+
+<body>
+	<div id="wrap">
+		
+			
+
+			<section id="poster_slide">
+			  <h1 class="skip">슬라이드</h1>
+				<!--<ul id="poster_frame">
+					<li id="bigposter1" class="poster_sl">
+						<img src="images/bigposter1.jpg" alt="메인포스터1" />
+					</li>
+					<li id="bigposter2" class="poster_sl">
+						<img src="images/bigposter2.jpg" alt="메인포스터2" />
+					</li>
+					<li id="bigposter3" class="poster_sl">
+						<img src="images/bigposter3.jpg" alt="메인포스터3" />
+					</li>
+					<li id="bigposter4" class="poster_sl">
+						<img src="images/bigposter4.jpg" alt="메인포스터4" />
+					</li>
+					<li id="bigposter5" class="poster_sl">
+						<img src="images/bigposter5.jpg" alt="메인포스터5" />
+					</li>
+				</ul>-->
+				<div id="poster_frame">
+					<img src="images/bigposterall.png" alt="슬라이드이미지" />
+				</div>
+				<div id="arrow">
+					<a class="prev" href="#" onClick="return false">
+					<img src="images/arrow_left.gif" alt="이전" /></a>
+					<a class="next" href="#" onClick="return false">
+					<img src="images/arrow_right.gif" alt="다음" /></a>
+				</div>
+				<div class="control_pannel">
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+        		</div>
+			</section>
+			
+			<article id="nownext">
+				
+				<h2><div id="bar1"></div>NOW & NEXT<div id="bar2"></div></h2>
+				<ul id="imglistbox1">
+					<li id="img1">
+						<a href="#">
+
+							<img src="images/midposter1.png" alt="무브먼트" />
+							<div id="img1_txtbox"></div>
+							<p class="txthead">(공연)</p>
+							<p>2018 마스터즈 시리즈5 - MOVEMENT<br /><br />
+								<span class="txt_desc">오페라 하우스<br />	2018-10-02 (화) 오후 8시</span>
+							</p>
+
+						</a>
+					</li>
+					<li id="img2">
+						<a href="#">
+							<img src="images/midposter2.png" alt="인터뷰" />
+							<div id="img2_txtbox"></div>
+							<p class="txthead">(공연)</p>
+							<p>인터뷰 - 2018 소극장뮤지컬 시리즈<br /><br />
+								<span class="txt_desc">앙상블 시어터<br />
+								2018.10. 5 (금) - 2018.10. 7 (일)</span>
+							</p>
+								
+
+						</a>
+					</li>
+				</ul>
+				<ul id="imglistbox2">
+					<li id="img3">
+						<a href="#">
+							<img src="images/midposter3.png" alt="크라잉넛" />
+							<div id="img3_txtbox"></div>
+							<p class="txthead">(공연)</p>
+							<p>크라잉 넛 : 리모델링<br /><br />
+								<span class="txt_desc">콘서트홀<br />2018.10.27 (토) 오후 6시</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+				<ul id="imglistbox3">
+					<li id="img4">
+						<a href="#">
+							<img src="images/midposter4.png" alt="대롱대롱" />
+							<div id="img4_txtbox"></div>
+							<p class="txthead">(전시)</p>
+							<p>성남청년작가展4<br />송지혜: 대롱대롱<br /><br />
+								<span class="txt_desc">큐브미술관 기획전시실
+									<br />2018.10.12 - 2018.12.23</span>
+							</p>
+						</a>
+					</li>
+					<li id="img5">
+						<a href="#">
+							<img src="images/midposter5.png" alt="불로장생" />
+							<div id="img5_txtbox"></div>
+							<p class="txthead">(전시)</p>
+							<p>현대용접조각展<br />
+							불로장생長生<br /><br />
+							<span class="txt_desc">큐브미술관 반달갤러리<br />2018.09.28 - 2018.10.28</span></p>
+						</a>
+					</li>
+				</ul>
+			</article>
+			
+			<article id="notice">
+				<h2><div id="bar3"></div>NOTICE<div id="bar4"></div></h2>
+				<ul>
+					<li id="notice1">
+						<a href="#">
+							<img src="images/aca.png" alt="아카데미" />
+							<div class="notice_txtbox"></div>
+							<p id="txthead2">(무료특강)</p>
+							<p>예술을 만나다<br /><br />
+							<span class="txt_desc">2018.09.28 - 2018.10.26<br />-자세히 알아보기-</span>
+							</p>
+							
+					  </a>
+					</li>
+					<li id="notice2">
+						<a href="#">
+							<img src="images/event.png" alt="이벤트" />
+							<div class="notice_txtbox"></div>
+						<p>유료회원초청 및 증정 이벤트<br /><br />
+							<span class="txt_desc">일시 : 9월1일(금) 오후8시<br />
+						증정품 : 성남문화재단 제작 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;티켓북 2개<br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-자세히 알아보기-</span></p>
+						</a>
+					</li>
+					<li>
+						<div id="snart_post">
+							<h3>SNART 소식</h3>
+							<ul>
+								<li id="snartpost1">
+									<a href="#"><img src="images/post_gongo.png" alt="공고" />
+									2018 성남문화재단 전임강사 1차 서류심사 합격자 발표 및 2차 심사 안내</a>
+								</li>
+							</ul>
+							<ul>
+								<li id="snartpost2">
+									<a href="#"><img src="images/post_gongo.png" alt="공고" />
+									2019년도 성남아트센터 갤러리808 정기대관 안내</a>
+								</li>
+							</ul>
+							<ul>
+								<li id="snartpost3">
+									<a href="#"><img src="images/post_notice.png" alt="공지" />
+									2018 재능나눔 '나눔모락, 기쁨모락' 10월 공연 무대크루 모집 공고</a>
+								</li>
+							</ul>
+							<ul>
+								<li id="snartpost4">
+									<a href="#"><img src="images/post_gongo.png" alt="공고" />
+									2018 성남미디어센터 시민제작단 하반기 추가 모집 공고</a>
+								</li>
+							</ul>
+							<ul>
+								<li id="snartpost5">
+									<a href="#"><img src="images/post_gongo.png" alt="공고" />
+									2018 상반기 성남미디어센터 신규 강좌 제안 공모</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				
+				
+				
+			</article>
+			
+		<section id="quick_menu">
+			<h2>Quick Menu</h2>
+				<div id="quick_icon">
+					<ul>
+						<li id="icon_ticket">
+							<div class="quick_icon">
+								<a href="#" class="rss">
+									<img src="images/icon_ticket.png" alt="예매안내" />
+									<h3>예매안내</h3>
+								</a>
+							</div>
+
+						</li>
+						<li id="icon_car">
+							<div class="quick_icon">
+								<a href="#" class="rss">
+									<img src="images/icon_car.png" alt="오시는길" />
+									<h3>오시는길</h3>
+								</a>
+							</div>
+						</li>
+						<li id="icon_quetion">
+							<div class="quick_icon">
+								<a href="#" class="rss">
+									<img src="images/icon_question.png" alt="고객문의" />
+									<h3>고객문의</h3>
+								</a>
+							</div>
+
+						</li>
+						<li id="icon_seat">
+							<div class="quick_icon">
+								<a href="#" class="rss">
+									<img src="images/icon_seat.png" alt="좌석배치도" />
+									<h3>좌석배치도</h3>
+								</a>
+							</div>
+						</li>
+						<li id="icon_tour">
+							<div class="quick_icon">
+								<a href="#" class="rss">
+									<img src="images/icon_tour.png" alt="사이버투어" />
+									<h3>사이버투어</h3>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section id="contact">
+				<h2>Connect With Us</h2>
+				<ul id="contact_icon">
+					<li id="insta">
+						<span class="cont_icon">
+							<a href="#" class="connect_icon">
+								<img src="images/icon_insta.gif" alt="인스타그램" />
+							</a>
+						</span>
+					</li>
+					<li id="youtube">
+						<span class="cont_icon">
+							<a href="#" class="connect_icon">
+								<img src="images/icon_youtube.gif" alt="유투브" />
+							</a>
+						</span>
+					</li>
+					<li id="twitter">
+						<span class="cont_icon">
+							<a href="#" class="connect_icon">
+								<img src="images/icon_tw.gif" alt="트위터" />
+							</a>
+						</span>
+					</li>
+					<li id="facebook">
+						<span class="cont_icon">
+							<a href="#" class="connect_icon">
+								<img src="images/icon_face.gif" alt="페이스북" />
+							</a>
+						</span>
+					</li>
+					<li id="blog">
+						<span class="cont_icon">
+							<a href="#" class="connect_icon">
+								<img src="images/icon_blog.gif" alt="블로그" />
+							</a>
+						</span>
+					</li>
+					<li id="kakao">
+						<span class="cont_icon">
+							<a href="#" class="connect_icon">
+								<img src="images/icon_kaka.gif" alt="카카오톡" />
+							</a>
+						</span>
+					</li>
+				</ul>
+				<ul id="contact_rull">
+					<li>
+						<a href="#">
+							<h3>개인정보처리방침</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h3>영상정보처리기기 운영/관리 방침</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h3>이메일무단수집거부</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h3>저작권보호정책 </h3>
+						</a>
+					</li>
+				</ul>
+			</section>
+		
+		<section id="mobile_page">
+			<div id="mob_show">
+				<a href="#">
+				</a>
+			  <h2>공연 / 콘서트</h2>
+				<div id="show_screen">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/01/poster1.png" alt="크라잉넛" />
+								<p class="mob_texthead">크라잉 넛 : 리모델링</p><br />
+								<p>콘서트홀<br />2018.10.27(토)<br />오후 6시
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/01/poster3.PNG" alt="이적" />
+								<p class="mob_texthead">2018 이적 콘서트 : 거울</p><br />
+								<p>콘서트홀<br />11.10(토) - 오후 6시<br />11.11(일) - 오후 4시</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/01/poster2.PNG" alt="거미" />
+								<p class="mob_texthead">2018 거미 전국투어 콘서트 : LIVE</p><br />
+								<p>오페라 하우스<br />11월 17일(토) 오후 6시<br />11월 18일(일) 오후 4시</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/01/poster5.png" alt="윤하" />
+								<p class="mob_texthead">윤하 콘서트 : RescuE</p><br />
+								<p>콘서트홀<br />2018.11.03 (토)<br />오후 6시</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/01/poster4.png" alt="원현정" />
+								<p class="mob_texthead">원현정 피아노 리사이틀</p><br />
+								<p>앙상블 시어터<br />2018.10.28 (일)<br />오후 6시</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="mob_exhibit">
+				<h2>전시</h2>
+				<div id="exhi_screen">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/mob/exh1.png" alt="atmuseum" />
+								<p class="mob_texthead">여름특별기획展 : AT MUSEUM</p><br />
+								<p>갤러리808<br />11월 2일(금) - 12월 2일(일)
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/mob/exh2.png" alt="대롱대롱" />
+								<p class="mob_texthead">성남청년작가展4 송지혜: 대롱대롱</p><br />
+								<p>큐브미술관 기획전시실<br />10월 12일(금) - 12월 23일(일) </p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/mob/exh3.png" alt="불로장생" />
+								<p class="mob_texthead">현대용접조각展 불로장생長生</p><br />
+								<p>큐브미술관 반달갤러리<br />9월 28일(금) - 10월 28일(일)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/mob/exh4.png" alt="매듭의시작" />
+								<p class="mob_texthead">매듭의시작</p><br />
+								<p>큐브미술관 상설전시실<br />11월 16일(금) - 12월 9일(일)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/mob/exh5.png" alt="물성변이" />
+								<p class="mob_texthead">물성변이</p><br />
+								<p>큐브미술관 반달갤러리<br />11월 16일(금) - 12월 9일(일)</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="mob_aca_event">
+				<h2>아카데미 / 이벤트</h2>
+					<div>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/mob/aca.png" alt="atmuseum" />
+									<p class="mob_texthead">(무료특강) 예술을 만나다</p><br />
+									<p>2018.09.28 - 2018.10.26
+									</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/mob/event.png" alt="대롱대롱" />
+									<p class="mob_texthead">유료회원초청 및 증정 이벤트</p><br />
+									<p>9월1일(금) 오후8시<br />
+									증정품 : 티켓북 2개 </p>
+								</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+		</section>
+			
+			
+		</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

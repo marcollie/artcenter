@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page04.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slidebar.js"></script>	
+	
+	
+<title>아카데미</title>
+	<style>
+		.control_pannel {
+			position: absolute;
+			bottom: 10px; 
+			left: 47.5%;
+			height: 10px;
+			overflow:hidden;
+			
+		}
+		.control_button {
+			width:10px; height:20px;
+			float:left;
+			position: relative;
+			background:url(images/roll_icon.png);
+			margin-right: 4px;
+		}
+		.control_button:hover {
+				top:-10px;
+		}
+		.control_button.active {
+				top:-10px;
+		}
+	</style>
+	
+	<script>
+
+			$(document).ready(function(){
+				$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+			});
+				$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+		});
+		
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		
+
+			<section id="poster_slide">
+			  <h1 class="skip">슬라이드</h1>
+				<ul id="poster_frame">
+					<li id="bigposter1" class="poster_sl">
+						<img src="images/bigposter1.jpg" alt="메인포스터1" />
+					</li>
+					<li id="bigposter2" class="poster_sl">
+						<img src="images/bigposter2.jpg" alt="메인포스터2" />
+					</li>
+					<li id="bigposter3" class="poster_sl">
+						<img src="images/bigposter3.jpg" alt="메인포스터3" />
+					</li>
+					<li id="bigposter4" class="poster_sl">
+						<img src="images/bigposter4.jpg" alt="메인포스터4" />
+					</li>
+					<li id="bigposter5" class="poster_sl">
+						<img src="images/bigposter5.jpg" alt="메인포스터5" />
+					</li>
+				</ul>
+				<div id="arrow">
+					<a class="prev" href="#" onClick="return false">
+					<img src="images/arrow_left.gif" alt="이전" /></a>
+					<a class="next" href="#" onClick="return false">
+					<img src="images/arrow_right.gif" alt="다음" /></a>
+				</div>
+				<div class="control_pannel">
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+        		</div>
+			</section>
+		
+		
+		<section id="academy">
+			<h2><div id="bar1"></div>아카데미<div id="bar2"></div></h2>
+			<content id="academy_info">
+				<h3>2018 2학기 (32기)</h3>
+				<img src="images/04/img_ C010100_01.jpg" alt="아카데미" />
+				<span>
+					<p class="info_head">▩ 개강</p><br />
+						<p>&nbsp;▶ 개강 일정 : 2018. 07. 16(월) 요일별 개강<br />
+						&nbsp;&nbsp;&nbsp;(감상강좌 및 일부강좌 제외)<br />
+						&nbsp;▶ 휴강 일정 : 일요일/ 법정 공휴일<br />
+						&nbsp;▶ 강좌별 커리큘럼은 일부 사정에 따라 변경될 수 있음.</p><br /><br />
+					
+					<p class="info_head">▩ 접수</p><br />
+
+						<p>&nbsp;▶ 기존수강생 : 2018. 06. 18(월)~<br />
+						&nbsp;▶ 신규수강생 : 2018. 06. 25(월)~ 
+							어린이 아카데미<br /> &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2018. 06. 27(수)~ 성인 아카데미<br />
+						&nbsp;▶ 접수방법 : 인터넷접수<br />
+						&nbsp;▶ 3학기 및 중복할인 대상자는 현장 접수 시 할인 적용 가능.<br />
+						&nbsp;▶ 기존 성남문화재단 계좌이체 불가(계좌번호 폐지)<br />
+						&nbsp;▶ 기존 수강생은 동일강좌 신청에 한함.<br />
+						&nbsp;▶ 신규 수강생은 신규수강생 등록 일에만 가능. <br />
+						   &nbsp;(기존 및 신규 수강생 등록 오류 시 취소 처리)<br />
+						&nbsp;▶ 문의 : 031-783-8156<br />
+          					  &nbsp;&nbsp;&nbsp; 평일 10:00~17:00 (주말, 공휴일 제외)</p><br /><br />
+
+					<p class="info_head">▩ 주차안내</p><br />
+
+						<p>&nbsp;▶ 아카데미 수강회원 유료 주차할인권 제공(1일 1,000원 /8시간이내)<br />
+						  &nbsp;&nbsp;&nbsp; ※ 아카데미 운영 요일 및 시간 외에는 사용불가</p>
+				</span>
+			</content>
+			
+			<h2><div id="bar3"></div>아카데미 시설<div id="bar4"></div></h2>
+			<content id="academy_fac">
+				
+			  <ul>
+					<li><p>□ 미디어홀</p><img src="images/04/mediahall.gif" alt="미디어홀" /></li>
+					<li><p>□ 음악실</p><img src="images/04/musicclass.gif" alt="음악실" /></li>
+					<li><p>□ 미술실</p><img src="images/04/arthall.gif" alt="미술실" /></li>
+					<li><p>□ 무용실</p><img src="images/04/bal.gif" alt="무용실" /></li>
+					<li><p>□ 피아노실</p><img src="images/04/pianoclass.gif" alt="피아노실" /></li>
+					<li><p>□ 뮤직홀</p><img src="images/04/musichall.gif" alt="뮤직홀" /></li>
+					<li><p>□ 세미나실</p><img src="images/04/semina.gif" alt="세미나실" /></li>
+				</ul>
+			</content>
+		
+		</section>
+
+	</div>
+</body>
+</html>

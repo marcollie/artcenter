@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page08.css">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+			});
+			$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+		});
+	</script>
+<title>오시는길</title>
+</head>
+
+<body>
+	<div id="wrap">
+		
+		<section id="map">
+			<h2><div id="bar1"></div>오시는 길<div id="bar2"></div></h2>
+			
+			
+			<div class="map">
+				<!-- * Daum 지도 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1541217021836" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1541217021836",
+		"key" : "qpdu",
+		"mapWidth" : "1060",
+		"mapHeight" : "400"
+	}).render();
+</script>
+			</div>
+			
+			
+			
+			<article id="bus">
+				<div>	
+					<div id="bus_head">
+						<img src="images/08/bus.png" alt="버스" />
+						<h3>버스</h3>
+					</div>
+					<div id="bus_station">
+					<div id="bus1">
+						<h4>□ 성남아트센터.태원고교 (성남아트센터 방면)</h4>
+						<br />
+						<ul>
+							<li>
+								<div class="img_busline normal_line"></div>
+								<p>17,  17-1,  17-1A,  33-1,  51,  52,  116-3,  119,  220,  250,  300,  720,  720-1</p>
+							</li>
+							<li>
+								<div class="img_busline direc_line"></div>
+								<p>3330,  4000,  9607</p>
+							</li>
+							<li>
+								<div class="img_busline over_line"></div>
+								<p>9408</p>
+							</li>
+							<li>
+								<div class="img_busline vil_line"></div>
+								<p>75,  251</p>
+							</li>
+						</ul>
+					</div>
+					<div id="bus2">
+						<h4>□ 성남아트센터.태원고교 (성남아트센터 반대편)</h4>
+						<br />
+						<ul>
+							<li>
+								<div class="img_busline normal_line"></div>
+								<p>17,  17-1,  17-1A,  33-1,  51,  52,  116-3,  119,  220,  250,  300,  720,  720-1,  720-1A</p>
+							</li>
+							<li>
+								<div class="img_busline direc_line"></div>
+								<p>3330,  4000,  9607</p>
+							</li>
+							<li>
+								<div class="img_busline over_line"></div>
+								<p>9408</p>
+							</li>
+							<li>
+								<div class="img_busline vil_line"></div>
+								<p>75,  251</p>
+							</li>
+						</ul>
+					</div>
+					<div id="bus3">
+						<h4>□ 농업기술센터.진흥아파트.동신아파트.이매동주민센터</h4>
+						<br />
+						<ul>
+							<li>
+								<div class="img_busline normal_line"></div>
+								<p>17,  33-1,  51,  52,  116-3,  119,  220,  250,  300,  720,  720-1</p>
+							</li>
+							<li>
+								<div class="img_busline direc_line"></div>
+								<p>3330,  4000,  9607</p>
+							</li>
+							<li>
+								<div class="img_busline over_line"></div>
+								<p>9408</p>
+							</li>
+							<li>
+								<div class="img_busline vil_line"></div>
+								<p>75,  251</p>
+							</li>
+							<li>
+								<div class="img_busline air_line"></div>
+								<p>5100,  5300</p>
+							</li>
+						</ul>
+					</div>
+					<div id="bus4">
+						<h4>□ 이매중학교</h4>
+						<br />
+						<ul>
+							<li>
+								<div class="img_busline normal_line"></div>
+								<p>33</p>
+							</li>							
+							<li>
+								<div class="img_busline over_line"></div>
+								<p>9403</p>
+							</li>
+						</ul>
+					</div>
+					<div id="bus5">
+						<h4>□ 매송초교.아름마을</h4>
+						<br />
+						<ul>
+							<li>
+								<div class="img_busline normal_line"></div>
+								<p>55,  55-1,  116</p>
+							</li>
+							<li>
+								<div class="img_busline direc_line"></div>
+								<p>9407</p>
+							</li>							
+							<li>
+								<div class="img_busline vil_line"></div>
+								<p>3-1</p>
+							</li>				
+						</ul>
+					</div>
+					<div id="bus6">
+						<h4>□ 삼환진덕아파트</h4>
+						<br />
+						<ul>
+							<li>
+								<div class="img_busline normal_line"></div>
+								<p>5,  15-1,  33,  103,  260,  330,  340,  340-1,  350,  357,  380</p>
+							</li>
+							<li>
+								<div class="img_busline direc_line"></div>
+								<p>1005,  3000,  9300,  9507</p>
+							</li>							
+							<li>
+								<div class="img_busline vil_line"></div>
+								<p>73-1,  812</p>
+							</li>				
+						</ul>
+					</div>
+					</div>
+				</div>
+			</article>
+			
+			<article id="subway">
+				<div>
+					<div id="sub_head">
+						<img src="images/08/subway.png" alt="지하철" />
+						<h3>지하철</h3>
+					</div>
+					<img src="images/08/bgline.png" alt="지하철 노선" />
+					<p>분당선ㆍ경강선 이매역 하차 - 1번 출구</p>
+				</div>
+			</article>
+		</section>
+		
+		<section id="parking">
+			<h2><div id="bar3"></div>주차안내<div id="bar4"></div></h2>
+			<img src="images/08/parking.png" alt="주차장" />
+			<article id="charge">
+				<div>
+					<h3>■ 주차요금 안내</h3>
+					<img class="icon" src="images/08/cal.png" alt="취소환불 아이콘" />
+					<p>성남아트센터에서는 2006년 11월 1일부터 부설주차장 이용에 대하여 아래와 같이 요금을 징수하오니 양지하여 주시기 바랍니다.<br />
+					<img src="images/08/fee.png" alt="주차요금" /></p><br />
+
+<p>▶ 무료개방일 : 어린이날(5월 5일), 시민의 날(10월 8일)<br />
+▶ 주차요금 50% 감면 (중복할인 불가)<br />
+&ensp;&ensp; - 장애인, 국가유공자(증명소지자), 경자동차(1000CC이하), 저공해차량(하이브리드, 전기차)<br />
+▶ 외부 월 정기주차 차량의 경우 주차장운영 사정에 따라 신청이 제한 될 수 있습니다.</p><br /><br />
+					
+				</div>
+			</article>
+			
+			<article id="calcul">
+				<div>
+					<h3>■ 주차요금 사전정산 안내</h3>
+					<img class="icon" src="images/08/cal2.png" alt="수강혜택 아이콘" />
+					<p>
+						주차요금 사전정산은 공연 종류 후 내방객들의 차량이 일시에 출차되어 귀가가 지체되는 불편을 해소하기 위해 공연관람을 기다리는 시간을 이용하여 주차요금을 미리 정산하는 제도를 실시하고 있습니다.<br /><br />
+
+<span class="calcul_subhead">▶ 사전정산 방법</span><br /><br />
+차량을 주차하신 후 해당 공연장 무인정산기에서 공연 관람전, 인터미션 시간대에 주차요금을 정산하시면 됩니다.<br /><br />
+<span class="calcul_subhead">▶ 무인정산기 위치</span><br /><br />
+&ensp;▷ 오페라하우스 : 1층 로비, 지하 1층 주차장<br />
+&ensp;▷ 콘서트홀 : 1층 로비<br />
+&ensp;▷ 앙상블시어터 : 지하 1층(아카데미), 1층 로비<br />
+원활한 출차를 위하여 관람객 여러분의 많은 협조를 부탁드립니다.<br />
+주차관련 문의사항 031-783-8203/8000<br />
+					</p>
+				</div>
+			</article>
+			
+			
+		</section>
+	</div>
+</body>
+</html>

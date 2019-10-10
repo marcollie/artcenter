@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+
+#orches {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+#orches #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 350px;
+	top: 47%;
+	left: 0;
+}
+
+#orches h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "";
+	color: #59150A;
+	margin: 100px 0 20px;
+}
+
+#orches #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 350px;
+	top: 47%;
+	right: 0;
+}
+
+article {
+	margin-top: 50px;
+	padding-bottom: 150px;
+	border-bottom: 1px solid #000;
+}
+
+article:last-child {
+	border-bottom: none;
+}
+
+#orches p {
+	font: normal 14px "NGothic";
+}
+
+#orc_info {
+	position: relative;
+}
+
+
+
+#orc_info #orcinfo_head {
+	margin-top: 20px;
+	font: bold 24px "NGothic";
+	color: #674011;
+}
+
+article h3 {
+	font: bold 24px "NGothic";
+	margin-bottom: 50px;
+	color: #674011;
+}
+
+#orc_dir {
+	position: relative;
+}
+
+#orc_dir span {
+	position: absolute;
+	top: 100px;
+	left: 550px;
+}
+
+
+
+article span #dir_head {
+	font: bold 17px "NGothic";
+	padding: 5px;
+	background: linear-gradient(to right,#bb966b, #fff);
+	background: -webkit-linear-gradient(to right,#bb966b, #fff);
+	background: -moz-linear-gradient(to right,#bb966b, #fff);
+	background: -o-linear-gradient(to right,#bb966b, #fff);
+	
+}
+
+#orc_mae {
+	position: relative;
+}
+
+#orc_mae span {
+	position: absolute;
+	top: 110px;
+	left: 20px;
+}
+
+
+
+article span #mae_head {
+	font: bold 17px "NGothic";
+	padding: 5px;
+	background: linear-gradient(to right,#bb966b, #fff);
+	background: -webkit-linear-gradient(to right,#bb966b, #fff);
+	background: -moz-linear-gradient(to right,#bb966b, #fff);
+	background: -o-linear-gradient(to right,#bb966b, #fff);
+	
+}
+
+#orc_prof {
+	position: relative;
+}
+
+#orc_prof:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#orc_prof ul {
+	position: relative;
+	float: left;
+}
+
+#orc_prof #prof_right {
+	position: relative;
+	margin-left: 150px;
+}
+
+#orc_prof ul li img {
+	position: absolute;
+}
+
+#orc_prof ul li p {
+	position: relative;
+	left: 10px;
+}
+
+#orc_prof .prof_name {
+	font: bold 15px "NGothic";
+	left: 0;
+	color: #775527;
+}
+
+#orc_prof span {
+	position: relative;
+	display: block;
+	width: 340px;
+	margin-left: 80px;
+	background: #fefbf6;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

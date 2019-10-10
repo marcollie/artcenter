@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/page01.css">
+<link rel="stylesheet" href="css/calendar.css" media="screen">
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slidebar.js"></script>	
+
+
+<title>공연전시일정</title>
+	<style>
+		.control_pannel {
+			position: absolute;
+			bottom: 10px; 
+			left: 47.5%;
+			height: 10px;
+			overflow:hidden;
+			
+		}
+		.control_button {
+			width:10px; height:20px;
+			float:left;
+			position: relative;
+			background:url(images/roll_icon.png);
+			margin-right: 4px;
+		}
+		.control_button:hover {
+				top:-10px;
+		}
+		.control_button.active {
+				top:-10px;
+		}
+	</style>
+	
+	<script>
+		$(document).ready(function(){
+			$.ajax({
+				url:'header.html',
+				success:function(data) {
+					$('body').prepend(data);
+				}
+			});
+			$.ajax({
+					url:'footer.html',
+					success:function(data) {
+						$('body').append(data);
+					}
+				});
+		});
+	</script>
+	
+</head>
+
+<body>
+	<div id="wrap">
+		
+		
+
+			<section id="poster_slide">
+			  <h1 class="skip">슬라이드</h1>
+				<ul id="poster_frame">
+					<li id="bigposter1" class="poster_sl">
+						<img src="images/bigposter1.jpg" alt="메인포스터1" />
+					</li>
+					<li id="bigposter2" class="poster_sl">
+						<img src="images/bigposter2.jpg" alt="메인포스터2" />
+					</li>
+					<li id="bigposter3" class="poster_sl">
+						<img src="images/bigposter3.jpg" alt="메인포스터3" />
+					</li>
+					<li id="bigposter4" class="poster_sl">
+						<img src="images/bigposter4.jpg" alt="메인포스터4" />
+					</li>
+					<li id="bigposter5" class="poster_sl">
+						<img src="images/bigposter5.jpg" alt="메인포스터5" />
+					</li>
+				</ul>
+				<div id="arrow">
+					<a class="prev" href="#" onClick="return false">
+					<img src="images/arrow_left.png" alt="이전" /></a>
+					<a class="next" href="#" onClick="return false">
+					<img src="images/arrow_right.png" alt="다음" /></a>
+				</div>
+				<div class="control_pannel">
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+        		</div>
+			</section>
+		
+		
+		<section id="schedule">
+			<h2><div id="bar1"></div>공연/전시 일정<div id="bar2"></div></h2>
+			
+			<ul id="menu">
+				<li><a href="#"><h3>공연</h3></a></li>
+				<li><a href="#"><h3>전시</h3></a></li>
+			</ul>
+			
+			<div id="schedule_content">
+				<ul id="cal_loc">
+					<li><div id="calendar"></div></li>
+					
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+					<script src="js/jquery-ui-datepicker.min.js"></script>
+					<script>
+						$('#calendar').datepicker({
+							inline: true,
+							firstDay: 1,
+							showOtherMonths: true,
+							dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+						});
+					</script>
+					
+					
+					<li><div id="location">
+							<h3>공연장 선택</h3>
+							<input class="aaa" type="checkbox" name="loc" value="opera">
+								오페라 하우스<br />
+							<input class="aaa" type="checkbox" name="loc" value="concert">
+								콘서트 홀<br />
+							<input class="aaa" type="checkbox" name="loc" value="ensemble">
+								앙상블 시어터<br />
+								
+						</div>
+					</li>
+				</ul>
+
+				<ul id="poster">
+					<li id="poster1">
+						<a href="#">
+							<img src="images/01/poster1.png" alt="크라잉넛" />
+							<div id="pos1_txtbox"></div>
+							<p>크라잉넛 콘서트 : 리모델링<br /><br />
+								<span class="txt_desc">콘서트홀<br />2018.10.27 (토) 오후 6시</span>
+							</p>
+						</a>
+					</li>
+					<li id="poster2">
+						<a href="#">
+							<img src="images/01/poster2.png" alt="거미" />
+							<div id="pos2_txtbox"></div>
+							<p>2018 거미 전국투어 콘서트 : LIVE<br />
+								<span class="txt_desc">오페라 하우스<br />11월 17일(토) 오후 6시<br />11월 18일(일) 오후 4시</span></p>
+						</a>
+					</li>
+					<li id="poster3">
+						<a href="#">
+							<img src="images/01/poster3.png" alt="이적" />
+							<div id="pos3_txtbox"></div>
+							<p>2018 이적 콘서트 : 거울<br /><br />
+								<span class="txt_desc">콘서트홀<br />11.10(토) 오후 6시<br />11.11(일) 오후 4시</span></p>
+						</a>
+					</li>
+					<li id="poster4">
+						<a href="#">
+							<img src="images/01/poster4.png" alt="원현정" />
+							<div id="pos4_txtbox"></div>
+							<p>원현정 피아노 리사이틀<br /><br />
+								<span class="txt_desc">앙상블 시어터<br />2018.10.28 (일) 오후 6시</span></p>
+							</a>
+					</li>
+					<li id="poster5">
+						<a href="#">
+							<img src="images/01/poster5.png" alt="윤하" />
+							<div id="pos5_txtbox"></div>
+							<p>윤하 콘서트 : RescuE<br /><br />
+								<span class="txt_desc">콘서트홀<br />2018.11.03 (토) 오후 6시</span></p>
+						</a>
+					</li>
+					<li id="poster6">
+						<a href="#">
+							<img src="images/01/poster6.png" alt="미래의명곡" />
+							<div id="pos6_txtbox"></div>
+							<p>미래의 명곡<br /><br />
+								<span class="txt_desc">앙상블 시어터<br />2018.10.24 (수) 오후 7시</span></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		
+			
+			
+	</div>
+</body>
+</html>

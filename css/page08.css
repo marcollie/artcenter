@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrap {
+	width: 1280px;
+}
+
+#map {
+	width: 1280px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+#map #bar1 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 110px;
+}
+
+#map h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "";
+	color: #59150A;
+	margin: 100px 0 20px;
+}
+
+#map #bar2 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 110px;
+}
+
+.map {
+	width: 1060px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#map #bus {
+	width: 1020px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#map #bus:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#map #bus #bus_head {
+	position: relative;
+	margin: 20px 0 10px;
+}
+
+#map #bus #bus_head h3 {
+	position: absolute;
+	top: 5px;
+	left: 50px;
+	font: bold 24px "NGothic";
+	color: #674011;
+}
+
+#map #bus #bus_station>div {
+	float: left;
+	margin-right: 9px;
+}
+
+#bus_station  {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#bus_station>div {
+	margin: 10px;
+	width: 480px;
+	height: 170px;
+}
+
+
+
+#bus_station ul li{
+	position: relative;
+}
+
+#bus_station ul li p {
+	position: relative;
+	top: -16px;
+	left: 30px;
+}
+
+#bus_station div.img_busline {
+	position: relative;
+	display: block;
+	width: 24px;
+	height: 14px;
+	background: url(../images/08/busline.png);
+}
+
+#bus_station div.over_line {
+	background-position: 0 238px;
+}
+
+#bus_station div.direc_line {
+	background-position: 0 252px;
+}
+
+#bus_station div.vil_line {
+	background-position: 0 266px;
+}
+
+#bus_station div.air_line {
+	background: url(../images/08/air_03.png);
+}
+
+
+
+#map #subway {
+	width: 1020px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#map #subway #sub_head {
+	position: relative;
+	margin: 20px 0 10px;
+}
+
+#map #subway #sub_head h3 {
+	position: absolute;
+	top: 5px;
+	left: 50px;
+	font: bold 24px "NGothic";
+	color: #674011;
+}
+
+#map #subway>div>img {
+	margin-left: 10px;
+}
+
+#map #subway>div>p {
+	position: absolute;
+	top: 60px;
+	left: 170px;
+	font: normal 14px "NGothic";
+}
+
+
+
+#parking {
+	width: 1280px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+#parking #bar3 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	left: 110px;
+}
+
+#parking h2 {
+	position: relative;
+	text-align: center; 
+	font: bold 30px "";
+	color: #59150A;
+	margin: 100px 0 20px;
+}
+
+#parking #bar4 {
+	position: absolute;
+	border: 1px solid #59150A;
+	width: 400px;
+	top: 47%;
+	right: 110px;
+}
+
+#parking article {
+	width: 1020px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#parking>img {
+	width: 1060px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+#parking article h3 {
+	margin: 50px 0 30px 0;
+	font: bold 25px "NGothic";
+	color: #5f4123;
+}
+
+
+#parking article .icon {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	left: 30px;
+	
+}
+
+#parking article p {
+	position: relative;
+	top: -150px;
+	left: 250px;
+	display: block;
+	width: 800px;
+	font: normal 14px "NGothic";
+	line-height: 25px;
+	color: #2E2E2E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
