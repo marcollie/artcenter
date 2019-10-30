@@ -5,7 +5,7 @@
 	padding: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 901px) {
 #wrap {
 	position: relative;
 	width: 1280px;
@@ -735,7 +735,9 @@ section#poster_slide {
 	}
 }
 
-@media (max-width: 767px) {
+
+
+@media (max-width: 900px) {
 	#wrap {
 	position: relative;
 	width: 100%;
