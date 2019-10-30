@@ -38,23 +38,7 @@
 		}
 	</style>
 	
-	<script>
-			$(document).ready(function() {
-				$.ajax({
-					url:'header.html',
-					success:function(data) {
-						$('body').prepend(data);
-					}
-				});
-				$.ajax({
-					url:'footer.html',
-					success:function(data) {
-						$('body').append(data);
-					}
-				});
-			});
 
-	</script>
 	
 </head>
 
@@ -471,6 +455,23 @@
 			
 		</div>
 </body>
+<script>
+	$(document).ready(function() {
+		$.ajax({
+			url:'header.html',
+			success:function(data) {
+				$('body').prepend(data);
+			}
+		});
+		$.ajax({
+			url:'footer.html',
+			success:function(data) {
+				$('body').append(data);
+			}
+		});
+	});
+
+</script>
 </html>
 
 
